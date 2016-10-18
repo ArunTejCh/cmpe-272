@@ -43,8 +43,9 @@
                 </br>
                 We are committed to providing a safe way to buy/sell/rent properties across various cities
                 </br>
+                </br>
                 you can login here
-                <a href="php/login.php">Login</a>
+                <a href="php/login.php" style="color: deepskyblue;background-color: black">Login</a>
             </h3>
         </div>
         <div class="tab-pane" id="2b">
