@@ -14,13 +14,18 @@
 <div class="jumbotron text-center">
     <?php
     echo "<h2>Juranet Housing and Real Estate</h2>";
+
+    //$search = phpinfo();
+    //print_r($search);
+    //$vari = 10 + "8%" + "$30";
+    //echo "$vari";
     ?>
 </div>
 
 <div id="exTab2" class="container">
-    <ul  class="nav nav-pills">
+    <ul class="nav nav-pills">
         <li class="active">
-            <a  href="#1b" data-toggle="tab">Home</a>
+            <a href="#1b" data-toggle="tab">Home</a>
         </li>
         <li><a href="#2b" data-toggle="tab">About</a>
         </li>
@@ -37,17 +42,23 @@
             <h3>Welcome to Juranet Housing and Real Estate. </br>
                 </br>
                 We are committed to providing a safe way to buy/sell/rent properties across various cities
+                </br>
+                you can login here
+                <a href="php/login.php">Login</a>
             </h3>
         </div>
         <div class="tab-pane" id="2b">
             <h3>About Juranet
-                </br>Passionate about simplifying property decisions, Juranet.tech offers home seekers, sellers and real estate professionals an extensive online real estate ecosystem. This ecosystem innovatively combines at a single stop:
+                </br>Passionate about simplifying property decisions, Juranet.tech offers home seekers, sellers and real
+                estate professionals an extensive online real estate ecosystem. This ecosystem innovatively combines at
+                a single stop:
                 </br>Exhaustive search options for both renting and buying property
                 </br>Easy to use analytics
                 </br>Apartment and locality reviews
                 </br>A comprehensive and verified data base of apartments across India
                 </br>Apartment community management tools
-                </br>As a user you have all conceivable property details for over 5 lakhs active property listings across over 200 cities and over 1,10,000 projects.</h3>
+                </br>As a user you have all conceivable property details for over 5 lakhs active property listings
+                across over 200 cities and over 1,10,000 projects.</h3>
         </div>
         <div class="tab-pane" id="3b">
             <h3>Buy Properties</h3>
