@@ -35,6 +35,8 @@
         </li>
         <li><a href="#5b" data-toggle="tab">Contacts</a>
         </li>
+        <li><a href="#6b" data-toggle="tab">Users</a>
+        </li>
     </ul>
 
     <div class="tab-content clearfix">
@@ -74,6 +76,29 @@
                 $homepage = file_get_contents('data/contacts.txt');
                 echo $homepage;
                 ?></h3>
+        </div>
+        <div class="tab-pane" id="6b">
+            <h3>User Creation</h3>
+            <form action="php/user_create.php" method="post">
+                Username: <input type="text" name="username"><br>
+                First Name: <input type="text" name="firstname"><br>
+                Last Name: <input type="text" name="lastname"><br>
+                Address: <textarea type="text" name="addr"></textarea><br>
+                E-mail: <input type="text" name="email"><br>
+                Home Phone: <input type="text" name="homephone"><br>
+                Cell Phone: <input type="text" name="cellphone"><br>
+                <input type="submit">
+            </form>
+            </br>
+            </br>
+            </br>
+            <h3>User Search</h3>
+            <form action="php/user_search.php" method="post">
+                Firstname: <input type="text" name="name"><br>
+                E-mail: <input type="text" name="email"><br>
+                Phone: <input type="text" name="phone"><br>
+                <input type="submit">
+            </form>
         </div>
     </div>
 </div>
