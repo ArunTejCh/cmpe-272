@@ -16,7 +16,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
 
     //error_log(print_r("username is: "+$username, TRUE));
 
-    $sql = "SELECT Userid, Firstname, Lastname, HomeAddr FROM users where Firstname = '$name' or Email = '$emailid' or Homephone = '$phone' or Cellphone = '$phone'";
+    $sql = "SELECT Userid, Username, Email, Firstname, Lastname, HomeAddr FROM users where Firstname = '$name' or Email = '$emailid' or Homephone = '$phone' or Cellphone = '$phone'";
     //echo $sql;
     $retval = mysqli_query( $db, $sql );
 
@@ -26,9 +26,11 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
 
     while($row = mysqli_fetch_array($retval, MYSQLI_ASSOC)) {
         echo "ID :{$row['Userid']}  <br> ".
+            "Username : {$row['Username']} <br> ".
             "Firstname : {$row['Firstname']} <br> ".
             "Lastname : {$row['Lastname']} <br> ".
             "Address : {$row['HomeAddr']} <br> ".
+            "Email : {$row['Email']} <br> ".
             "--------------------------------<br>";
     }
 
