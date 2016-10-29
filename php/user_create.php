@@ -19,7 +19,7 @@ $cellphone = mysqli_real_escape_string($db,$_POST['cellphone']);
 //error_log(print_r("username is: "+$username, TRUE));
 
 $sql = "INSERT into users (Username, Firstname, Lastname, HomeAddr, Email, Homephone, Cellphone) VALUES ('$username', '$firstname', '$lastnamename', '$addr', '$emailid', '$homephone', '$cellphone')";
-echo $sql;
+//echo $sql;
 $retval = mysqli_query( $db, $sql );
 
 if(! $retval ) {

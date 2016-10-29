@@ -151,7 +151,7 @@
             <h3>User Search</h3>
             <form action="php/user_search.php" method="post" class="form-horizontal">
                 <div class="form-group">
-                    <label class="control-label col-sm-2" for="name">Username:</label>
+                    <label class="control-label col-sm-2" for="name">Firstname:</label>
                     <div class="col-sm-10">
                         <input type="text" class="form-control" id="name"  name="name" placeholder="Enter username">
                     </div>
