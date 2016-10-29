@@ -79,25 +79,100 @@
         </div>
         <div class="tab-pane" id="6b">
             <h3>User Creation</h3>
-            <form action="php/user_create.php" method="post">
-                Username: <input type="text" name="username"><br>
+            <!--<form action="php/user_create.php" method="post">
+                <!--Username: <input type="text" name="username"><br>
                 First Name: <input type="text" name="firstname"><br>
                 Last Name: <input type="text" name="lastname"><br>
                 Address: <textarea type="text" name="addr"></textarea><br>
                 E-mail: <input type="text" name="email"><br>
                 Home Phone: <input type="text" name="homephone"><br>
                 Cell Phone: <input type="text" name="cellphone"><br>
+                <div class="form-group row">
+                    <label for="example-text-input" class="col-xs-2 col-form-label">Text</label>
+                    <div class="col-xs-10">
+                        <input class="form-control" type="text" value="Artisanal kale" id="example-text-input">
+                    </div>
+                </div>
                 <input type="submit">
+            </form>-->
+
+            <form action="php/user_create.php" method="post" class="form-horizontal">
+                <div class="form-group">
+                    <label class="control-label col-sm-2" for="username">Username:</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" id="username"  name="username" placeholder="Enter username">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label col-sm-2" for="firstname">Firstname:</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" id="firstname" name="firstname" placeholder="Enter firstname">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label col-sm-2" for="lastname">Lastname:</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" id="lastname" name="lastname" placeholder="Enter lastname">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label col-sm-2" for="addr">Address:</label>
+                    <div class="col-sm-10">
+                        <input type="textarea" class="form-control" id="addr" name="addr" placeholder="Enter address">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label col-sm-2" for="email">Email:</label>
+                    <div class="col-sm-10">
+                        <input type="email" class="form-control" id="email" placeholder="Enter email">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label col-sm-2" for="homephone">Homephone:</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" id="homephone" name="homephone" placeholder="Enter Homephone">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label col-sm-2" for="cellphone">CellPhone:</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" id="cellphone" name="cellphone" placeholder="Enter Cellphone">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-sm-offset-2 col-sm-10">
+                        <button type="submit" class="btn btn-default">Submit</button>
+                    </div>
+                </div>
             </form>
             </br>
             </br>
             </br>
             <h3>User Search</h3>
-            <form action="php/user_search.php" method="post">
-                Firstname: <input type="text" name="name"><br>
-                E-mail: <input type="text" name="email"><br>
-                Phone: <input type="text" name="phone"><br>
-                <input type="submit">
+            <form action="php/user_search.php" method="post" class="form-horizontal">
+                <div class="form-group">
+                    <label class="control-label col-sm-2" for="name">Username:</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" id="name"  name="name" placeholder="Enter username">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label col-sm-2" for="email">Firstname:</label>
+                    <div class="col-sm-10">
+                        <input type="email" class="form-control" id="email" name="email" placeholder="Enter email">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label col-sm-2" for="phone">Phone:</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" id="phone" name="phone" placeholder="Enter phone">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-sm-offset-2 col-sm-10">
+                        <button type="submit" class="btn btn-default">Submit</button>
+                    </div>
+                </div>
             </form>
         </div>
     </div>

@@ -26,4 +26,4 @@ if(! $retval ) {
     die('Failed to create user!!');
 }
 
-echo "Created User successfully\n";
+echo "Created User ".$username." successfully\n";
