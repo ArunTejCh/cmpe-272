@@ -15,3 +15,12 @@ CREATE TABLE users
   Homephone varchar(255),
   Cellphone varchar(255)
 );
+
+CREATE TABLE products
+(
+  id int PRIMARY KEY AUTO_INCREMENT,
+  title varchar(255),
+  description varchar(255),
+  price varchar(255),
+  img_link varchar(255)
+);
