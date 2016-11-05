@@ -21,6 +21,11 @@
                             echo "<h2>Juranet Inc</h2>";
                             ?>
                         </div>
+                        <p>
+                            Welcome to Juranet Inc. </br>
+                            This is a hobby project created for my uni course cmpe-272 </br>
+                            Feel free to look around :) </br>
+                        </p>
                     </div>
                 </div>
             </div>
