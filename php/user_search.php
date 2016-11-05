@@ -1,3 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<?php include '../php/widgets/head.php'?>
+<body>
+<div id="wrapper">
+    <?php include '../php/widgets/sidebar.php'?>
+    <div id="page-content-wrapper">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12">
 <?php
 /**
  * Created by PhpStorm.
@@ -26,7 +37,6 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
 
     while($row = mysqli_fetch_array($retval, MYSQLI_ASSOC)) {
         echo "ID :{$row['Userid']}  <br> ".
-            "Username : {$row['Username']} <br> ".
             "Firstname : {$row['Firstname']} <br> ".
             "Lastname : {$row['Lastname']} <br> ".
             "Address : {$row['HomeAddr']} <br> ".
@@ -36,3 +46,15 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
 
     echo "Fetched data successfully\n";
 }
+?>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<?php include '../php/widgets/footer.php'?>
+
+</body>
+</html>
