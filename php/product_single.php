@@ -44,7 +44,7 @@ setcookie("time_$id",time());
             <div class="row">
                 <div class="col-lg-12">
                     <div class="container">
-                        <div class="well well-sm">
+                        <div class="well well-sm" style="display: none">
                             <strong>Product List</strong>
                             <div class="btn-group" style="padding-left: 10px;">
                                 <a href="#" id="list" class="btn btn-default btn-sm"><span

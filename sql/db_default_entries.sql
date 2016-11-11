@@ -25,11 +25,11 @@ INSERT INTO users VALUES (20, "user", "user", "Siobhan", "Murdock", "San Jose", 
 
 INSERT INTO products VALUES (1, "MSI R9 280", "MSI R9 280 GAMING 3G 384-Bit GDDR5 PCI Express 3.0 x16 HDCP Ready CrossFireX Support Video Card", "250$", "1.jpg");
 INSERT INTO products VALUES (2, "EVGA 1080 GTX", "EVGA GeForce GTX 1080 Founders Edition, 08G-P4-6180-KR, 8GB GDDR5X, LED, DX12 OSD Support ", "650$", "2.jpg");
-INSERT INTO products VALUES (3, "ASUS 660 GTX", "ASUS GeForce GTX 960 4GB WINDFORCE 2X OC EDITION", "180$", "3.jpg");
+INSERT INTO products VALUES (3, "ASUS 660 GTX", "ASUS GeForce GTX 960 4GB WINDFORCE 2X OC EDITION SLI-READY Graphics Card", "180$", "3.jpg");
 INSERT INTO products VALUES (4, "EVGA 1070 GTX", "EVGA GeForce GTX 1070 Founders Edition, 08G-P4-6170-KR, 8GB GDDR5, LED, DX12 OSD Support (PXOC)", "450$", "4.jpg");
 INSERT INTO products VALUES (5, "GeForce Titan X", "EVGA 06G-P4-3791-KR G-SYNC Support GeForce GTX TITAN BLACK Superclocked 6GB 384-Bit ", "1000$", "5.jpg");
-INSERT INTO products VALUES (6, "ATI Radeon 6950", "PowerColor Radeon HD 6950 DirectX 11 AX6950 1GBD5-2DHE 1GB 256-Bit GDDR5 PCI Express 2.1 x16 HDCP Ready CrossFireX Support Video Card", "475$", "6.jpg");
-INSERT INTO products VALUES (7, "Coolermaster Red Tower 95X", "Cooler Master HAF 95x - Mid Tower Computer Case with High Airflow, Supporting up to Six 120mm Fans and USB 3.0", "75$", "7.jpg");
+INSERT INTO products VALUES (6, "ATI Radeon 6950", "PowerColor Radeon HD 6950 DirectX 11 AX6950 1GBD5-2DHE 1GB 256-Bit GDDR5 PCI Express 2.1 x16", "475$", "6.jpg");
+INSERT INTO products VALUES (7, "Coolermaster Red Tower 95X", "Cooler Master HAF 95x - Mid Tower Computer Case with High Airflow, Supporting up to Six 120mm Fans", "75$", "7.jpg");
 INSERT INTO products VALUES (8, "Logitech G400s", "Logitech G400s 910-003589 Black 8 Buttons 1 x Wheel USB Wired Optical Gaming Mouse", "100$", "8.jpg");
 INSERT INTO products VALUES (9, "Steel Series Sensei RAW", "SteelSeries Sensei RAW 62154 Glossy Black 8 Buttons 1 x Wheel USB Wired Laser Gaming Mouse", "250$", "9.jpg");
-INSERT INTO products VALUES (10, "Coolermaster White Tower 105X", "Cooler Master HAF 115x - High Tower Computer Case with High Airflow, Supporting up to Six 130mm Fans and USB 3.0", "95$", "10.jpg");
+INSERT INTO products VALUES (10, "Coolermaster White Tower 105X", "Cooler Master HAF 115x - High Tower Computer Case with High Airflow, ", "95$", "10.jpg");
