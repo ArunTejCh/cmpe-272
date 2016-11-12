@@ -63,6 +63,28 @@ $content  = curl_exec($ch);
 curl_close($ch);
 
 $userlist = json_decode($content,true);
+
+$site_url2 = "http://geekbabu.com/api/users.php";
+$options2 = array(
+    CURLOPT_RETURNTRANSFER => true,   // return web page
+    CURLOPT_HEADER         => false,  // don't return headers
+    CURLOPT_FOLLOWLOCATION => true,   // follow redirects
+    CURLOPT_MAXREDIRS      => 10,     // stop after 10 redirects
+    CURLOPT_ENCODING       => "",     // handle compressed
+    CURLOPT_USERAGENT      => "test", // name of client
+    CURLOPT_AUTOREFERER    => true,   // set referrer on redirect
+    CURLOPT_CONNECTTIMEOUT => 120,    // time-out on connect
+    CURLOPT_TIMEOUT        => 120,    // time-out on response
+);
+
+$ch2 = curl_init($site_url2);
+curl_setopt_array($ch2, $options2);
+
+$content2  = curl_exec($ch2);
+
+curl_close($ch2);
+
+$userlist2 = json_decode($content2,true);
 //echo $userlist;
 /*print_r($userlist);
 echo "ergverg";
@@ -81,6 +103,24 @@ foreach($userlist as $value){
         </thead>
         <tbody>
         <?php foreach ($userlist as $row): array_map('htmlentities', $row); ?>
+            <tr>
+                <td style="width:150px;border:1px solid black;"><?php echo implode('</td><td style="width:150px;border:1px solid black;">', $row); ?></td>
+            </tr>
+        <?php endforeach; ?>
+        </tbody>
+    </table>
+<?php endif; ?>
+
+<?php  echo "<h3>Geekbabu.com Users </h3> </br>";
+if (count($userlist2) > 0): ?>
+    <table>
+        <thead>
+        <tr>
+            <th style="width:150px;border:1px solid black;"><?php echo implode('</th><th style="width:150px;border:1px solid black;">', array_keys(current($userlist2))); ?></th>
+        </tr>
+        </thead>
+        <tbody>
+        <?php foreach ($userlist2 as $row): array_map('htmlentities', $row); ?>
             <tr>
                 <td style="width:150px;border:1px solid black;"><?php echo implode('</td><td style="width:150px;border:1px solid black;">', $row); ?></td>
             </tr>
