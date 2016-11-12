@@ -62,12 +62,29 @@ $content  = curl_exec($ch);
 
 curl_close($ch);
 
-$userlist = json_decode($content);
-echo $userlist;
-print_r($userlist);
+$userlist = json_decode($content,true);
+//echo $userlist;
+/*print_r($userlist);
 echo "ergverg";
-
-for($i = 0;$i < $userlist.sizeOf(); $i++){
-    echo $userlist[$i];
-}
 //print_r(phpinfo());
+foreach($userlist as $value){
+    print_r( $value );echo "<br>";
+}*/
+//print_r(phpinfo());
+?>
+<?php if (count($userlist) > 0): ?>
+    <table>
+        <thead>
+        <tr>
+            <th style="width:150px;border:1px solid black;"><?php echo implode('</th><th style="width:150px;border:1px solid black;">', array_keys(current($userlist))); ?></th>
+        </tr>
+        </thead>
+        <tbody>
+        <?php foreach ($userlist as $row): array_map('htmlentities', $row); ?>
+            <tr>
+                <td style="width:150px;border:1px solid black;"><?php echo implode('</td><td style="width:150px;border:1px solid black;">', $row); ?></td>
+            </tr>
+        <?php endforeach; ?>
+        </tbody>
+    </table>
+<?php endif; ?>
