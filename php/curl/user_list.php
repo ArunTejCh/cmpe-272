@@ -17,15 +17,20 @@ if (!$retval) {
     die('Could not get user data for given parameters');
 }
 
-while ($row = mysqli_fetch_array($retval, MYSQLI_ASSOC)) {
+/*while ($row = mysqli_fetch_array($retval, MYSQLI_ASSOC)) {
     echo "ID :{$row['Userid']}  <br> " .
         "Firstname : {$row['Firstname']} <br> " .
         "Lastname : {$row['Lastname']} <br> " .
         "Address : {$row['HomeAddr']} <br> " .
         "Email : {$row['Email']} <br> " .
         "--------------------------------<br>";
-}
+}*/
 
+$rows = array();
+while($r = mysqli_fetch_assoc($retval)) {
+    $rows[] = $r;
+}
+print json_encode($rows);
 //echo "Fetched data successfully\n";
 
 ?>
