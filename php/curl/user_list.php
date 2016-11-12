@@ -9,7 +9,7 @@ include("../dbconfig.php");
 
 //error_log(print_r("username is: "+$username, TRUE));
 
-$sql = "SELECT Userid, Email, Firstname, Lastname, HomeAddr FROM users";
+$sql = "SELECT Userid, Email, Firstname, Lastname, HomeAddr, Homephone, Cellphone FROM users";
 //echo $sql;
 $retval = mysqli_query($db, $sql);
 
