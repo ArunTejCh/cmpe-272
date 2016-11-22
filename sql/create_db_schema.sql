@@ -22,5 +22,6 @@ CREATE TABLE products
   title varchar(255),
   description varchar(255),
   price varchar(255),
+  quantity int,
   img_link varchar(255)
 );
