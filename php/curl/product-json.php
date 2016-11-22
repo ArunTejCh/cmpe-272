@@ -8,8 +8,14 @@
 include("../dbconfig.php");
 
 //error_log(print_r("username is: "+$username, TRUE));
-
-$sql = "SELECT id, title as name, quantity, img_link as image_url, price, description FROM products";
+$method = $_SERVER['REQUEST_METHOD'];
+$request = explode('/', trim($_SERVER['PATH_INFO'],'/'));
+if($request["0"] == "") {
+    $sql = "SELECT id, title as name, quantity, img_link as image_url, price, description FROM products";
+}else{
+    $id = $request["0"];
+    $sql = "SELECT id, title as name, quantity, img_link as image_url, price, description FROM products where id = $id";
+}
 //echo $sql;
 $retval = mysqli_query($db, $sql);
 
