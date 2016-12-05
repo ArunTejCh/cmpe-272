@@ -31,8 +31,11 @@ while($r = mysqli_fetch_assoc($retval)) {
 foreach ($rows as &$value) {
     $value["image_url"] = "https://juranet.tech/images/products/". $value["image_url"];
 }
-
-print json_encode($rows);
+if($request["0"] == "") {
+    print json_encode($rows);
+}else{
+    print json_encode($rows[0]);
+}
 //echo "Fetched data successfully\n";
 
 ?>
