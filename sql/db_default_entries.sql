@@ -29,7 +29,10 @@ INSERT INTO products VALUES (3, "ASUS 660 GTX", "ASUS GeForce GTX 960 4GB WINDFO
 INSERT INTO products VALUES (4, "EVGA 1070 GTX", "EVGA GeForce GTX 1070 Founders Edition, 08G-P4-6170-KR, 8GB GDDR5, LED, DX12 OSD Support (PXOC)", "450$", 10, "4.jpg");
 INSERT INTO products VALUES (5, "GeForce Titan X", "EVGA 06G-P4-3791-KR G-SYNC Support GeForce GTX TITAN BLACK Superclocked 6GB 384-Bit ", "1000$", 10, "5.jpg");
 INSERT INTO products VALUES (6, "ATI Radeon 6950", "PowerColor Radeon HD 6950 DirectX 11 AX6950 1GBD5-2DHE 1GB 256-Bit GDDR5 PCI Express 2.1 x16", "475$", 10, "6.jpg");
-INSERT INTO products VALUES (7, "Coolermaster Red Tower 95X", "Cooler Master HAF 95x - Mid Tower Computer Case with High Airflow, Supporting up to Six 120mm Fans", 10, "75$", "7.jpg");
+INSERT INTO products VALUES (7, "Coolermaster Red Tower 95X", "Cooler Master HAF 95x - Mid Tower Computer Case with High Airflow, Supporting up to Six 120mm Fans", "75$", 10 , "7.jpg");
 INSERT INTO products VALUES (8, "Logitech G400s", "Logitech G400s 910-003589 Black 8 Buttons 1 x Wheel USB Wired Optical Gaming Mouse", "100$", 10, "8.jpg");
 INSERT INTO products VALUES (9, "Steel Series Sensei RAW", "SteelSeries Sensei RAW 62154 Glossy Black 8 Buttons 1 x Wheel USB Wired Laser Gaming Mouse", "250$", 10, "9.jpg");
 INSERT INTO products VALUES (10, "Coolermaster White Tower 105X", "Cooler Master HAF 115x - High Tower Computer Case with High Airflow, ", "95$", 10, "10.jpg");
+INSERT INTO products VALUES (11, "Interstellar", "Interstellar movie poster description", "8$", 20, "11.jpg");
+INSERT INTO products VALUES (12, "Inception", "Inception movie poster description", "10$", 20, "12.jpg");
+INSERT INTO products VALUES (13, "Forest Gump", "Forest Gump movie poster description", "8$", 20, "13.jpg");
