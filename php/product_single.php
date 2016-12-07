@@ -30,6 +30,27 @@ if (isset($_COOKIE[$id])) {
 
 setcookie("time_$id",time());
 
+$site_url = "https://merkato.herokuapp.com/sellers/2/products/$id/track";
+$options = array(
+    CURLOPT_RETURNTRANSFER => true,
+    // return web page
+    CURLOPT_HEADER         => false,// don't return headers
+    CURLOPT_POST           => 1,
+    CURLOPT_FOLLOWLOCATION => true,   // follow redirects
+    CURLOPT_MAXREDIRS      => 10,     // stop after 10 redirects
+    CURLOPT_ENCODING       => "",     // handle compressed
+    CURLOPT_USERAGENT      => "test", // name of client
+    CURLOPT_AUTOREFERER    => true,   // set referrer on redirect
+    CURLOPT_CONNECTTIMEOUT => 120,    // time-out on connect
+    CURLOPT_TIMEOUT        => 120,    // time-out on response
+);
+$ch = curl_init($site_url);
+curl_setopt_array($ch, $options);
+
+$content  = curl_exec($ch);
+
+curl_close($ch);
+
 ?>
 
 <!DOCTYPE html>
