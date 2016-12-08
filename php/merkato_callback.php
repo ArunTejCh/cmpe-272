@@ -59,7 +59,7 @@ if (isset($_GET['code']))
         $_SESSION['login_user'] = $userData['name'];
 
         echo $_SESSION['login_user'];
-        //header("location: welcome.php");
+        header("location: welcome.php");
     } else {
         print_r($result_json);
     }
