@@ -37,6 +37,9 @@
             <a href="/php/login.php">Login</a>
         </li>
         <li>
+            <a href="/php/merkato_login.php">Merkato Login</a>
+        </li>
+        <li>
             <a href="/php/curl/combined_users.php">All User List</a>
         </li>
     </ul>
