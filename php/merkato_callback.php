@@ -54,8 +54,11 @@ if (isset($_GET['code']))
         curl_close($ch);
 
         print_r($result_json);
-        $_SESSION['login_user'] = $result_json;
+        $userData = json_decode($result_json);
+        print_r($userData);
+        $_SESSION['login_user'] = $userData['name'];
 
+        echo $_SESSION['login_user'];
         //header("location: welcome.php");
     } else {
         print_r($result_json);
