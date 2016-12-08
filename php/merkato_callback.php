@@ -68,5 +68,5 @@ if (isset($_GET['code']))
 }
 else
 {
-    print_r($_GET);
+    header("location: login.php");
 }
