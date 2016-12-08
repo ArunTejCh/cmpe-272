@@ -54,7 +54,7 @@ if (isset($_GET['code']))
         curl_close($ch);
 
         print_r($result_json);
-        $userData = json_decode($result_json);
+        $userData = json_decode($result_json, true);
         print_r($userData);
         $_SESSION['login_user'] = $userData['name'];
 
