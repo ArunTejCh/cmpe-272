@@ -56,6 +56,7 @@ if (isset($_GET['code']))
         print_r($result_json);
         $userData = json_decode($result_json, true);
         print_r($userData);
+        session_start();
         $_SESSION['login_user'] = $userData['name'];
 
         echo $_SESSION['login_user'];
