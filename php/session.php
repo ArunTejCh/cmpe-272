@@ -15,6 +15,7 @@
    $row = mysqli_fetch_array($ses_sql,MYSQLI_ASSOC);*/
 
    $login_session = $_SESSION['login_user'];
+   $merkato_login = $_SESSION['merkato_login'];
 
    if(!isset($_SESSION['login_user'])){
        header("location:login.php");

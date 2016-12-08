@@ -22,11 +22,11 @@ include('session.php');
                     <h1>Welcome <?php echo $login_session; ?></h1>
                     </br>
                     <div>
-                    <span>Current list of users
-                    </br>
-                    <h4>Mary Smith, John Wang, Alex Bington</h4>
-
+                        <?php if($merkato_login){?>
+                    <span>
+                        Login via Merkato successfull!!
                     </span>
+                        <?php }?>
                     </div>
                     <h4><a href="logout.php">Sign Out</a></h4>
                 </div>

@@ -58,6 +58,7 @@ if (isset($_GET['code']))
         print_r($userData);
         session_start();
         $_SESSION['login_user'] = $userData['name'];
+        $_SESSION['merkato_login'] =  true;
 
         echo $_SESSION['login_user'];
         header("location: welcome.php");
